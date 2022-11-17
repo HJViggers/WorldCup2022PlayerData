@@ -596,9 +596,3 @@ Player_Data[nrow(Player_Data)+1,] <- list("Mehdi Taremi","Forwards",2578,"Iran",
 Player_Data[nrow(Player_Data)+1,] <- list("Saman Ghoddos","Midfielders",536,"Iran",0.17,0.10,1.34,0.17,0.17,0.27,4.37,36.27,66.2,3.19,0.84,3.02,4.03,2.85,0.50,0.34,2.69,1.85,78,52,58,83,83,65,94,26,9,53,41,87,85,86,10,1,96,89)
 Player_Data[nrow(Player_Data)+1,] <- list("Sardar Azmoun","Att Mid / Wingers",761,"Iran",0.24,0.59,3.07,0.12,0.24,0.83,3.55,26.14,66.5,3.67,0.83,5.44,6.86,0.95,0.24,0.47,1.30,2.48,51,99,89,12,62,98,38,7,7,67,11,85,82,30,14,11,99,98)
 Player_Data[nrow(Player_Data)+1,] <- list("Majid Hosseini","Center Backs",409,"Iran",0.00,0.00,0.00,0.00,0.00,0.00,0.22,49.73,82.3,0.88,0.66,0.22,0.22,0.66,1.98,0.88,1.76,1.76,38,14,10,47,35,10,15,42,44,9,83,23,72,17,71,35,7,30)
-
-box1 <- ggplot(Player_Data,aes(x=Position,y=BasedOnMinutes))+geom_boxplot()
-box1
-scatter1 <- ggplot(filter(Player_Data,BasedOnMinutes > 2000),aes(x=Per90_xAG,y=Per90_Assists))+geom_point()+geom_smooth()+geom_jitter()
-scatter1
-
